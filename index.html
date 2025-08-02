@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-gradient-to-b from-orange-300 to-orange-100 min-h-screen text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-3xl font-extrabold text-orange-600">Food Hub</a>
+      <div class="space-x-6 font-medium">
+        <a href="#menu" class="hover:text-orange-600">Menu</a>
+        <a href="#about" class="hover:text-orange-600">About Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-orange-200 h-64 flex items-center justify-center text-center">
+    <h1 class="text-5xl font-bold text-orange-800">Delicious Meals Delivered to You</h1>
+  </header>
+
+  <!-- Menu Section -->
+  <section id="menu" class="container mx-auto px-4 py-16">
+    <h2 class="text-4xl font-bold text-center text-orange-700 mb-10">Our Menu</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <!-- Food Cards -->
+      <!-- Repeat same structure for 9 items -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="images/burger.jpg" alt="Burger" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-2xl font-semibold mb-1">Cheesy Burger - ₹120</h3>
+          <p class="text-gray-600 mb-3">A cheese-loaded burger with fresh veggies.</p>
+          <button class="order-btn bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Order Now</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="images/pizza.jpg" alt="Pizza" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-2xl font-semibold mb-1">Margherita Pizza - ₹250</h3>
+          <p class="text-gray-600 mb-3">Classic cheesy pizza with basil and tomato.</p>
+          <button class="order-btn bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Order Now</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="images/salad.jpg" alt="Salad" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-2xl font-semibold mb-1">Fresh Salad - ₹100</h3>
+          <p class="text-gray-600 mb-3">Healthy greens with zesty dressing.</p>
+          <button class="order-btn bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Order Now</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="images/pasta.jpg" alt="Pasta" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-2xl font-semibold mb-1">Creamy Pasta - ₹180</h3>
+          <p class="text-gray-600 mb-3">Pasta in Alfredo sauce with veggies.</p>
+          <button class="order-btn bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Order Now</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="images/momos.jpg" alt="Momos" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-2xl font-semibold mb-1">Steamed Momos - ₹90</h3>
+          <p class="text-gray-600 mb-3">Veg dumplings with spicy chutney.</p>
+          <button class="order-btn bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Order Now</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="images/noodles.jpg" alt="Noodles" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-2xl font-semibold mb-1">Chowmein - ₹110</h3>
+          <p class="text-gray-600 mb-3">Spicy stir-fried noodles with vegetables.</p>
+          <button class="order-btn bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Order Now</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="images/roll.jpg" alt="Roll" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-2xl font-semibold mb-1">Paneer Roll - ₹130</h3>
+          <p class="text-gray-600 mb-3">Paneer tikka wrapped in soft roti.</p>
+          <button class="order-btn bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Order Now</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="images/thali.jpg" alt="Thali" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-2xl font-semibold mb-1">Indian Thali - ₹200</h3>
+          <p class="text-gray-600 mb-3">Roti, sabzi, dal, rice and dessert.</p>
+          <button class="order-btn bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Order Now</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+        <img src="images/icecream.jpg" alt="Ice Cream" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-2xl font-semibold mb-1">Vanilla Ice Cream - ₹60</h3>
+          <p class="text-gray-600 mb-3">Smooth vanilla dessert for summer.</p>
+          <button class="order-btn bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="bg-orange-100 py-10">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-orange-700 mb-4">About Me</h2>
+      <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+        I'm <strong>Rishabh Shukla</strong>, a B.Tech CSE student at UCER Prayagraj. I aim to become a full stack developer and eventually a data scientist. I created this project as part of my web development training. Hope you enjoy the design!
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-orange-200 py-6 shadow-inner text-center mt-10">
+    <p class="text-orange-700 font-medium">Contact: <a href=\"mailto:rishabhshukla0762@gmail.com\" class=\"underline\">rishabhshukla0762@gmail.com</a></p>
+    <p class="text-orange-600 mt-2\">&copy; 2025 Food Hub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

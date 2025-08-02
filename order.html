@@ -1,0 +1,32 @@
+<!-- order.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Processing Payment</title>
+  <script>
+    setTimeout(() => {
+      document.getElementById("message").innerText = "✅ Payment Successful!";
+    }, 2000);
+
+    setTimeout(() => {
+      document.getElementById("message").innerText = "🙏 Thank You for Your Order!";
+    }, 4000);
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #facc15, #fef3c7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #333;
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="message">💳 Processing Payment...</div>
+</body>
+</html>
